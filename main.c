@@ -45,7 +45,7 @@ char* string_from_archive(const char* filename) {
     }
     fread(size_buffer, 1, arch_size, archive);
     size_buffer[arch_size] = '\0';
-    fclose(arch_size);
+    fclose(archive);
 
     return size_buffer;
 }
