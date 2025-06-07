@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -I. -Ipocketpy
+CFLAGS = -std=c11 -Wall -I. -Ipocketpy 
 
 SRC = main.c levenshtein.c pocketpy/pocketpy.c
 BIN = main
