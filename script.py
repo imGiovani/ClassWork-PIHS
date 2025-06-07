@@ -1,21 +1,16 @@
-import sys
+print('.:. Strings distance aplying Levenshtein .:.')
+strings = ['Marcelo Gomensoro', 
+           'Charles Xavier', 
+           'Chico Moedas', 
+           'Giovani Daenerys']
+for i in range(len(strings)):
+    string_one, string_two = strings[i].split(' ')
+    distance = py_levenshtein(string_one, string_two)
+    print('Aplying Levenshtein Distance between: ' + string_one + ' & ' + string_two + ' it results in: ' + str(distance))
 
-# Função que recebe a distância de Levenshtein de um módulo C (lembre-se de integrar via pocketpy)
-def run_levenshtein(str1, str2):
-    # Chame a função que você integra em C aqui (a ideia é que o pocketpy faça a ponte)
-    # Exemplo: distance = c_levenshtein(str1, str2)
-    # Simulando saída:
-    distance = len(str1) + len(str2)  # Algo fake só para testar
-    return distance
-
-# Demonstração para 4 pares de strings
-strings = [
-    ("kitten", "sitting"),
-    ("flaw", "lawn"),
-    ("gumbo", "gambit"),
-    ("abc", "abcd")
-]
-
-for str1, str2 in strings:
-    distance = run_levenshtein(str1, str2)
-    print(f"Distância de Levenshtein entre '{str1}' e '{str2}': {distance}")
+print('======Distancia de Hamming:======')
+strings = ['Erick Errik', 'Jonn John', 'Peddro Pascal', 'Giovani Oliveir']
+for i in range(len(strings)):
+    string_one, string_two = strings[i].split(' ')
+    distance = py_hamming(string_one, string_one)
+    print('Aplying Hamming Distance between: ' + string_one + ' & ' + string_two + ' it results in: ' + str(distance))
