@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "levenshtein.h"  // Incluir o cabeçalho da biblioteca Levenshtein
 #include <stdlib.h>
-#include "pocketpy/pocketpy.h"
+#include "pocketpy\pocketpy\pocketpy.h"
+#include "hamming.h"
 
 static bool py_levenshtein(int argc, py_Ref argv){
     PY_CHECK_ARGC(2);
@@ -37,7 +38,7 @@ char* string_from_archive(const char* filename) {
     fseek(archive, 0, SEEK_END);
     long arch_size = ftell(archive);
     fseek(archive, 0, SEEK_SET);
-    char* size_buffer = malloc(arch_size++);
+    char* size_buffer = malloc(arch_size+1);
     if (!size_buffer) {
         perror("There's something worng with the allocation");
         fclose(archive);

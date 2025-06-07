@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -I. -Ipocketpy 
 
-SRC = main.c levenshtein.c hamming.c pocketpy/pocketpy.c
+SRC = main.c levenshtein.c hamming.c pocketpy\pocketpy\pocketpy.c
 BIN = main
 
 default: $(BIN) 
