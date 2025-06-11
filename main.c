@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "levenshtein.h"  // Incluir o cabeçalho da biblioteca Levenshtein
 #include <stdlib.h>
-#include "pocketpy\pocketpy\pocketpy.h"
+#include "pocketpy.h"
 #include "hamming.h"
 
 static bool py_levenshtein(int argc, py_Ref argv){
