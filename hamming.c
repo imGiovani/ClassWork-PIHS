@@ -13,7 +13,7 @@ int hamming(const char* string_one, const char* string_two){
     
     for(size_t i = 0; i < len_one; i++){
         if(string_one[i] != string_two[i]) {
-            h_distance++;
+            h_distance ++;
         }
     }
     
