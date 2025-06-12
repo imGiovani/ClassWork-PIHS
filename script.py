@@ -1,7 +1,7 @@
 print('.:. Strings distance aplying Levenshtein .:.')
 strings = ['Marcelo Gomensoro', 
            'Charles Xavier', 
-           'Chico Moedas', 
+           'FaFox Sergio', 
            'Giovani Daenerys']
 for i in range(len(strings)):
     string_one, string_two = strings[i].split(' ')
@@ -12,5 +12,5 @@ print('======Distancia de Hamming:======')
 strings = ['Erick Errik', 'Jonn John', 'Peddro Pascal', 'Giovani Oliveir']
 for i in range(len(strings)):
     string_one, string_two = strings[i].split(' ')
-    distance = py_hamming(string_one, string_one)
+    distance = py_hamming(string_one, string_two)
     print('Aplying Hamming Distance between: ' + string_one + ' & ' + string_two + ' it results in: ' + str(distance))
