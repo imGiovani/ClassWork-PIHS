@@ -2,6 +2,10 @@
 
 Este projeto implementa uma ferramenta em C que expõe funções para calcular as distâncias **Levenshtein** e **Hamming** entre strings, acessíveis a partir de um script Python via **PocketPy**.
 
+## Discentes que realizaram o projeto:
+Fabricio Raposo da Silva Bonifacio - RA: 135162
+Giovani Oliveira Santos - RA: 133166
+
 ## 📋 Funcionalidades
 
 - **`py_levenshtein(str1, str2)`**: Calcula a distância de Levenshtein entre duas strings.
